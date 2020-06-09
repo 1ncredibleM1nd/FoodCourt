@@ -171,11 +171,11 @@ document.addEventListener ('DOMContentLoaded', () => {
 			
 			form.insertAdjacentElement('afterend', statusMessage);
 			
-			request.open('POST','server.php');
+		
 			//request.setRequestHeader('Content-type', 'multipart/form-data');
 			
 			const formData = new FormData(form);
-			request.send(formData);
+			
 			fecth('server.php',{
 				method:"POST",
 				// header:{
